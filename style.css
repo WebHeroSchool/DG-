@@ -18,7 +18,7 @@
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: 24px/31px pt_serifbold, arial, helvetica, sans-serif;
+  font: 700 24px/31px pt_serifbold, arial, helvetica, sans-serif;
   border: dashed 1px red;
 }
 
@@ -52,7 +52,7 @@
 
 .menu__item {
   position: relative;
-  margin-right: 26px;
+  margin-right: 27px;
   font: 500 18px/21px robotobold, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -112,7 +112,7 @@
 
 .main__title {
   margin: 0 0 40px 0;
-  font: 700 50px/66px pt_serifbold, arial, helvetica, sans-serif;
+  font: 700 66px/87px pt_serifbold, arial, helvetica, sans-serif;
 }
 
 .main__title-text_highlight {
@@ -120,19 +120,20 @@
 }
 
 .main__subtitle {
-  margin: 0 0 59px 0;
-  font: 400 18px/21px robotoregular, arial, helvetica, sans-serif;
+  margin: 0 0 41px 0;
+  font: 400 22px/25px robotoregular, arial, helvetica, sans-serif;
 }
 
 .main__button {
   display: inline-block;
-  font: 500 14px/16px robotobold, arial, helvetica, sans-serif;
+  font: 500 18px/21px robotobold, arial, helvetica, sans-serif;
   color: #fff;
   background: #0056EC;
-  padding: 14px 16px;
+  padding: 18px 21px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
+  border: dashed 1px red;
 }
 
 .main__button:hover {
