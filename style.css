@@ -17,7 +17,7 @@
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
+  font: 24px/31px pt_serifbold, arial, helvetica, sans-serif;
   border: dashed 1px red;
 }
 
@@ -50,12 +50,58 @@
 }
 
 .menu__item {
-  padding: 0 13px;
-  font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin-right: 26px;
+  font: 500 18px/21px robotobold, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity .7s;
+  border: dashed 1px red;
 }
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0px;
+}
+
+.menu__item:after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .7s, width .7s;
+}
+
+.menu__item_active:after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+}
+
+.menu__item:hover {
+  opacity: .5;
+}
+
+.menu__item:hover:after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+}
+
+.menu__item:hover:after, .menu__item_active:after {
+  opacity: 1;
+  width: 100%;
 }
 
 .main-content__title {
