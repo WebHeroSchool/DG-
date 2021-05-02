@@ -14,13 +14,39 @@
 }
 
 .logo {
+  position: relative;
   padding: 40px 0;
-  font-family: 'Roboto', sans-serif;
+  padding-left: 44px;
+  font: bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
+  border: dashed 1px red;
+}
+
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: .7;
+  border: dashed 1px red;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056EC;
+}
+
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
 }
 
 .menu {
   display: flex;
   align-items: center;
+  border: dashed 1px red;
 }
 
 .menu__item {
@@ -28,7 +54,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.menu__item: last-child {
+.menu__item:last-child {
   padding-right: 0;
 }
 
