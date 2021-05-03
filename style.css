@@ -52,7 +52,7 @@
 
 .menu__item {
   position: relative;
-  margin-right: 27px;
+  margin-right: 26px;
   font: 500 18px/21px robotobold, arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -106,8 +106,9 @@
 }
 
 .main {
-  padding: 0 63% 110px 0;
+  padding: 100px 63% 110px 0;
   background: top right no-repeat url(img/mainimg.svg);
+  border: dashed 1px red;
   }
 
 .main__title {
