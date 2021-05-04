@@ -5,13 +5,12 @@ body {
 .wrapper {
   margin: auto;
   width: 80%;
-  border: dashed 1px red;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 107px;
 }
 
 .logo {
@@ -19,7 +18,6 @@ body {
   padding: 40px 0;
   padding-left: 44px;
   font: 700 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
-  border: dashed 1px red;
 }
 
 .logo__circle {
@@ -31,7 +29,6 @@ body {
   height: 28px;
   border-radius: 50%;
   opacity: .7;
-  border: dashed 1px red;
 }
 
 .logo__circle_color_dark-blue {
@@ -47,40 +44,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  border: dashed 1px red;
 }
-
-/* @media (max-width: 375px) {
-  .menu {
-  display: none;
-  }
-
-  .header {
-    margin-bottom: 28px;
-  }
-
-  .main {
-    text-align: center;
-    padding: 74% 0 0;
-    background-size: 74%;
-    background-position: top center;
-    background: url(img/mainimg_mob.svg);
-  }
-
-  .main__title {
-    margin-bottom: 44px;
-    font: 30px/39px 'pt_serifbold', arial, helvetica, sans-serif;
-  }
-
-  .main__subtitle {
-    margin-bottom: 25px;
-    font: 500 16px/19px 'robotobold', arial, helvetica, sans-serif;
-  }
-
-  .main__button {
-    font: 500 14px/16px 'robotobold', arial, helvetica, sans-serif;
-  }
-}*/
 
 .menu__item {
   position: relative;
@@ -89,11 +53,10 @@ body {
   color: #000;
   text-decoration: none;
   transition: opacity .7s;
-  border: dashed 1px red;
 }
 
 .menu__item:last-child {
-  margin-right: 0px;
+  margin-right: 15px;
 }
 
 .menu__item:after {
@@ -140,11 +103,10 @@ body {
 .main {
   padding: 100px 64% 115px 0;
   background: bottom right no-repeat url(img/mainimg.svg);
-  border: dashed 1px red;
   }
 
 .main__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 36px 0;
   font: 700 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
@@ -166,9 +128,47 @@ body {
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
-  border: dashed 1px red;
 }
 
 .main__button:hover {
   opacity: .7;
+}
+
+@media (max-width: 375px) {
+
+  .logo {
+    position: relative;
+    padding: 24px 0 28px 0;
+    color: #FFF;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header {
+    margin-bottom: 0px;
+  }
+
+  .main {
+    text-align: center;
+    padding: 74% 0 0;
+    background-size: 74%;
+    background: top center no-repeat url(img/mainimg_mob.svg);
+  }
+
+  .main__title {
+    margin: 32px 0 44px 0;
+    font: 30px/39px 'pt_serifbold', arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin: 0 0 25px 0;
+    font: 500 16px/19px 'robotobold', arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    font: 500 14px/16px 'robotobold', arial, helvetica, sans-serif;
+    padding: 14px 25px 13px 16px;
+  }
 }
